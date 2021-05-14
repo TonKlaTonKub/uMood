@@ -4,9 +4,10 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import Sign_up from './screen/Sign_up';
 import Login from './screen/Sign_up'
+import Profile from './screen/Profile'
 
 const App = () => {
-  return <Sign_up/>
+  return <Profile/>
 }
 
 export default App
