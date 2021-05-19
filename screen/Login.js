@@ -2,9 +2,14 @@ import React from 'react';
 import { StyleSheet, Text, View, ImageBackground } from 'react-native';
 import { Button, TextInput } from 'react-native-paper';
 
-const Login = () => {
-    return (
-        <ImageBackground source={require('../assets/bg_1.jpg')} style={styles.container}>
+class Login extends React.Component {
+    next_page = () => {
+        this.props.navigation.navigate('Main')
+    }
+
+    render() {
+        return (
+            <ImageBackground source={require('../assets/bg_1.jpg')} style={styles.container}>
           <View>
               <Text style={styles.text_style}>
                   uMood
@@ -21,7 +26,7 @@ const Login = () => {
             />
           </View>
           <View>
-            <Button mode="contained" style={styles.Button_Style}>
+            <Button mode="contained" style={styles.Button_Style} onPress={this.next_page}>
               Login
             </Button>
             <Button mode="contained">
@@ -32,7 +37,8 @@ const Login = () => {
             </Button>
           </View>
         </ImageBackground>
-    )
+        )
+    }
 }
 
 const styles = StyleSheet.create({
