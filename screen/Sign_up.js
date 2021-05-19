@@ -39,12 +39,14 @@ const Sign_up = () => {
             />
           </View>
           <View style={styles.Space}>
-            <Button mode="contained" style={styles.ButtonStlyle}>
-              Sign in
-            </Button>
-            <Button mode="contained">
-              Cancel
-            </Button>
+            <View style={styles.statsContainer}>
+              <Button mode="contained" style={styles.statsBox}>
+                Sign up
+              </Button>
+              <Button mode="contained" style={styles.statsBox}>
+                Cancel
+              </Button>
+            </View>
           </View>
         </ImageBackground>
     )
@@ -56,6 +58,15 @@ const styles = StyleSheet.create({
       backgroundColor: '#fff',
       alignItems: 'center',
       justifyContent: 'center',
+    },
+    statsContainer: {
+      flexDirection: "row",
+      alignSelf: "center",
+    },
+    statsBox: {
+      alignItems: "center",
+      marginRight: 10,
+      marginLeft: 10
     },
     InputStyle: {
       marginTop: 5,

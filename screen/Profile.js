@@ -5,8 +5,9 @@ import { StyleSheet, Text, View, ImageBackground } from 'react-native';
 const Profile = () => {
     return (
         <ImageBackground source={require('../assets/bg.jpg')} style={styles.container}>
-            <Text>Hello Screen</Text>
-            <Text>( Your Name )</Text>
+            <View>
+                
+            </View>
         </ImageBackground>
     )
 }

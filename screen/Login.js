@@ -4,9 +4,9 @@ import { Button, TextInput } from 'react-native-paper';
 
 const Login = () => {
     return (
-        <ImageBackground source={require('../assets/background_login.jpg')} style={styles.container}>
+        <ImageBackground source={require('../assets/bg_1.jpg')} style={styles.container}>
           <View>
-              <Text style={styles.textstyle}>
+              <Text style={styles.text_style}>
                   uMood
               </Text>
           </View>
@@ -21,13 +21,13 @@ const Login = () => {
             />
           </View>
           <View>
-            <Button mode="contained" style={styles.ButtonStlyle}>
+            <Button mode="contained" style={styles.Button_Style}>
               Login
             </Button>
             <Button mode="contained">
               Sign in
             </Button>
-            <Button mode="text" style={styles.ButtonStlyle}>
+            <Button mode="text" style={styles.Button_Style}>
               Forgot Password
             </Button>
           </View>
@@ -48,14 +48,14 @@ const styles = StyleSheet.create({
       height: 50,
       width: 250
     },
-    ButtonStlyle: {
+    Button_Style: {
       marginTop: 10,
       marginBottom: 10,
     },
     Space: {
       marginTop: 5
     },
-    textstyle: {
+    text_style: {
         fontSize: 50
     }
   });
