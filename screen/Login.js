@@ -3,8 +3,12 @@ import { StyleSheet, Text, View, ImageBackground } from 'react-native';
 import { Button, TextInput } from 'react-native-paper';
 
 class Login extends React.Component {
-    next_page = () => {
-        this.props.navigation.navigate('Main')
+    goto_Main = () => {
+      this.props.navigation.navigate('Main')
+    }
+
+    goto_Sign_up = () => {
+      this.props.navigation.navigate('Sign_up')
     }
 
     render() {
@@ -26,11 +30,11 @@ class Login extends React.Component {
             />
           </View>
           <View>
-            <Button mode="contained" style={styles.Button_Style} onPress={this.next_page}>
+            <Button mode="contained" style={styles.Button_Style} onPress={this.goto_Main}>
               Login
             </Button>
-            <Button mode="contained">
-              Sign in
+            <Button mode="contained" onPress={this.goto_Sign_up}>
+              Sign up
             </Button>
             <Button mode="text" style={styles.Button_Style}>
               Forgot Password
