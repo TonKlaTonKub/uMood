@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View, ImageBackground, Image } from 'react-native';
 import { Button, TextInput } from 'react-native-paper';
+import { color } from 'react-native-reanimated';
 
 class Main extends React.Component {
     render() {
@@ -11,7 +12,7 @@ class Main extends React.Component {
                         style={styles.sizeImage}
                         source={require('../assets/icon/Pic_profile.png')}
                     />
-                    <Text style={styles.marginLeft}>
+                    <Text style={{fontSize: 20, marginTop: 22}}>
                         ( Your Name )
                     </Text>
                 </View>
@@ -99,14 +100,15 @@ const styles = StyleSheet.create({
     Text_Month: {
         fontSize: 30,
         alignItems: 'center',
-        backgroundColor: '#FFA07A'
+        backgroundColor: '#ffb7a2',
+        color: '#fff'
     },
     Layout_Text: {
         alignItems: 'center',
     },
     test_image: {
-        width: 250,
-        height: 250,
+        width: 200,
+        height: 200,
         alignItems: 'center'
     }
   });

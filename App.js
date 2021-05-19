@@ -4,11 +4,12 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import ReactNavigator from './navigation/ReactNavigator'
 import Main from './screen/Main'
+import Profile from './screen/Profile'
 
 
 const App = () => {
   //return <ReactNavigator/>
-  return <Main/>
+  return <Profile/>
 }
 
 export default App
